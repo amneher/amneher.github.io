@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-[Link to another page](./docs/first.html).
+[Link to another page](./posts/first.html).
 
 This is the index page.
 
