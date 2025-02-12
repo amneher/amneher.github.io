@@ -2,3 +2,4 @@ domain: amneher.github.io       # if you want to force HTTPS, specify the domain
 url: https://amneher.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 baseurl: /REPOSITORY-NAME/      # place folder name if the site is served in a subfolder
 theme: jekyll-theme-tactile
+show_downloads: false
