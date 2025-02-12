@@ -2,6 +2,7 @@
 layout: post
 title: "Second Post"
 date: YYYY-MM-DD hh:mm:ss -0000
+permalink: /posts/first.html
 categories: hello-world
 ---
 
