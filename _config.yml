@@ -5,3 +5,5 @@ remote_theme: pages-themes/tactile@v0.2.0
 show_downloads: false
 github:
   public: true
+paginate: 10
+paginate_path: "/posts/page:num/"
