@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello, I'm new here. I think.
-permalink: https://amneher.github.io/posts/hello-world.html
+permalink: "/posts/hello-world.html"
 tags: first-post
 ---
 
