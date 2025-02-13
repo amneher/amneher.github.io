@@ -9,6 +9,34 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <style type="text/css" media="screen">
+      .container {
+        margin: 10px auto;
+        max-width: 800px;
+        text-align: center;
+      }
+      h1 {
+        margin: 10px 0;
+        font-size: 2em;
+        line-height: 1;
+        letter-spacing: -1px;
+      }
+      .footer {
+        padding-top: 35px;
+        padding-bottom: 20px;
+        margin-top: 20px;
+        margin-bottom: -27px;
+        text-align: center;
+        width: 100%;
+        color: #88879c;
+        background-color: #dbdbdb;
+        position: fixed; bottom: 35px; right: 0px;
+      }
+      .navbar, .nav-item {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    </style>
 
 {% seo %}
   
@@ -19,30 +47,22 @@
       <div class="inner">
 
         <header>
-          <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-          <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+          <h1>{{ site.title }}</h1>
+          <h2>{{ site.description }}</h2>
         </header>
         <section id="navigation" class="clearfix">
-          <ul class="">
-            <li><a href="{{ site.url }}">Home</a></li>
-            <li><a href="{{ site.url }}/posts/">Posts</a></li>
-          </ul>
+          <nav class="navbar">
+            <a class="nav-item" href="{{ site.url }}">Home</a>
+            <a class="nav-item" href="{{ site.url }}/about/">About</a>
+            <a class="nav-item" href="#">Categories</a>
+          </nav>
         </section>
         <hr>
         <section id="main_content">
           {{ content }}
         </section>
 
-        <footer style="
-          padding-top: 35px;
-          padding-bottom: 20px;
-          margin-top: 20px;
-          margin-bottom: -27px;
-          text-align: center;
-          width: 100%;
-          color: #88879c;
-          background-color: #dbdbdb;
-          position: fixed; bottom: 35px; right: 0px;">
+        <footer class="footer">
         {% if site.github.is_project_page %}
           {{ site.title | default: site.github.repository_name }} is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br>
         {% endif %}
