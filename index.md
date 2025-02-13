@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-[Link to another page](./posts/first.html).
+[Link to first post]({ post_url /posts/first }).
 
 This is the index page.
 
